@@ -1,4 +1,4 @@
-const CACHE_NAME = "v1.1.0"
+const CACHE_NAME = "v1.2.0"
 
 /**
  * The install event is fired when the registration succeeds.
@@ -8,16 +8,16 @@ const CACHE_NAME = "v1.1.0"
 this.addEventListener('install', async function() {
     const cache = await caches.open(CACHE_NAME);
     return cache.addAll([
-        '/public-transport-tickets/',
-        '/public-transport-tickets/index.html',
-        '/public-transport-tickets/main.js',
-        '/public-transport-tickets/css/style.css',
-        '/public-transport-tickets/css/configuration.css',
-        '/public-transport-tickets/css/emulation.css',
-        '/public-transport-tickets/images/company.jpg',
-        '/public-transport-tickets/images/ticket.jpg',
-        '/public-transport-tickets/images/ticket-bus.jpg',
-        '/public-transport-tickets/images/left-arrow.svg',
+        '/transport/',
+        '/transport/index.html',
+        '/transport/main.js',
+        '/transport/css/style.css',
+        '/transport/css/configuration.css',
+        '/transport/css/emulation.css',
+        '/transport/images/company.jpg',
+        '/transport/images/ticket.jpg',
+        '/transport/images/ticket-bus.jpg',
+        '/transport/images/left-arrow.svg',
     ])
 })
 
